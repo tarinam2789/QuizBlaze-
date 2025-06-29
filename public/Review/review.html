@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Review Answers - QuizBlaze</title>
+  <link rel="stylesheet" href="review.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg p-3" style="background-color: #6a11cb;">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <span class="navbar-brand fw-bold text-white fs-3">QuizBlaze</span>
+      
+      <ul class="navbar-nav d-flex flex-row gap-3">
+        <li class="nav-item"><a class="nav-link text-white" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="../Game/quiz.html">Play Again</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="../Results/results.html">View Results</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="review-container">
+    <div class="review-header">
+      <h1><i class="fas fa-search"></i> Answer Review</h1>
+      <p class="review-subtitle">Explore your answers and learn from mistakes</p>
+      
+      <div class="review-controls">
+        <div class="filter-group">
+          <label for="filter"><i class="fas fa-filter"></i> Show:</label>
+          <select id="filter" class="form-select">
+            <option value="all">All Questions</option>
+            <option value="correct">Correct Only</option>
+            <option value="incorrect">Incorrect Only</option>
+          </select>
+        </div>
+        <button onclick="window.print()" class="btn-primary">
+          <i class="fas fa-print"></i> Print Summary
+        </button>
+      </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="stats-summary">
+      <div class="stat-card correct-stat">
+        <i class="fas fa-check-circle"></i>
+        <span id="correctCount">0</span> Right Answers
+      </div>
+      <div class="stat-card incorrect-stat">
+        <i class="fas fa-times-circle"></i>
+        <span id="incorrectCount">0</span> Missed Questions
+      </div>
+      <div class="stat-card total-stat">
+        <i class="fas fa-list-ol"></i>
+        <span id="totalCount">0</span> Total Reviewed
+      </div>
+    </div>
+
+    <!-- Review List -->
+    <div id="review-list" class="review-list"></div>
+
+    <!-- Navigation Buttons -->
+    <div class="btn-group">
+      <button onclick="location.href='../Game/quiz.html'" class="btn-primary">
+        <i class="fas fa-redo"></i> Retake Quiz
+      </button>
+      <button onclick="location.href='../Leaderboard/leaderboard.html'" class="btn-secondary">
+        <i class="fas fa-trophy"></i> See Leaderboard
+      </button>
+    </div>
+  </main>
+  
+
+
+  <!-- Footer -->
+  <footer class="text-center text-white py-3" style="background-color: #6a11cb;">
+    <p class="mb-0">&copy; 2025 QuizBlaze. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <audio id="clickSound" src="../media/click.wav" preload="auto"></audio>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="review.js"></script>
+</body>
+</html>

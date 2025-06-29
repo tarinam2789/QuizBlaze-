@@ -1,0 +1,63 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+/* Navbar */
+.custom-navbar {
+  background: linear-gradient(90deg, #d1495b, #871f2a);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-text {
+  font-size: 1.75rem;
+  letter-spacing: 0.05em;
+}
+
+.icon-color {
+  color: #d1495b;
+  vertical-align: middle;
+}
+
+/* Main auth section */
+.auth-container {
+  min-height: calc(100vh - 140px);
+  padding: 2rem 1rem;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+}
+
+/* Eye button */
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(90deg, #d1495b, #871f2a);
+  width: 100%;
+}

@@ -1,0 +1,154 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f0f2f5;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.quiz-navbar {
+  background-color: #2c3e50;
+  padding: 1rem 2rem;
+  border: none;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff6b6b;
+}
+
+main.main-container {
+  padding: 2rem 1rem;
+  flex-grow: 1;        
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.quiz-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dcdcdc;
+}
+
+#hud {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.hud-item {
+  text-align: center;
+}
+
+#progressBar {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 12px;
+  width: 150px;
+  margin-top: 5px;
+}
+
+#progressBarFull {
+  background-color: #3498db;
+  height: 100%;
+  width: 0%;
+  transition: width 0.3s;
+}
+
+.hud-main-text {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.time-bar {
+  margin-bottom: 1rem;
+}
+
+.timer {
+  background: #ecf0f1;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 1rem;
+  font-weight: bold;
+  color: #3498db;
+}
+
+.question-text {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.choice-container {
+  display: flex;
+  align-items: center;
+  background: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.choice-container:hover {
+  background-color: #f0f0f0;
+}
+
+.choice-prefix {
+  font-weight: bold;
+  margin-right: 1rem;
+  color: #3498db;
+}
+
+.choice-text {
+  flex: 1;
+  color: #333;
+}
+
+.quiz-footer {
+  background-color: #d1495b; 
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+#feedback-message {
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  min-height: 1.5em;
+  color: #333;
+}
+

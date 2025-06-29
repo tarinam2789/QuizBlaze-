@@ -1,0 +1,104 @@
+/* Reset & base */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fff8f5;
+  color: #2c3e50;
+}
+
+/* Navbar */
+nav.navbar {
+  background: #d1495b;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 8px rgb(209 73 91 / 0.3);
+}
+nav .navbar-brand {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 0.05em;
+  user-select: none;
+}
+nav .btn-outline-light {
+  border-color: #fff;
+  color: #fff;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+nav .btn-outline-light:hover {
+  background-color: #fff;
+  color: #d1495b;
+}
+
+/* Hero Section */
+.hero-section {
+  flex-grow: 1; /* grow to fill available vertical space */
+  background: #f9e6e6;
+  margin: 3rem auto 4rem auto;
+  max-width: 900px;
+  border-radius: 1.25rem;
+  padding: 3rem 2rem;
+  box-shadow: 0 8px 24px rgba(209, 73, 91, 0.25);
+  text-align: center;
+}
+.hero-section h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #b12a37;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+.hero-section p.lead {
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #4a4a4a;
+}
+.hero-section .btn-primary {
+  background-color: #b12a37;
+  border: none;
+  padding: 0.85rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+.hero-section .btn-primary:hover {
+  background-color: #891f29;
+}
+.hero-section .btn-secondary {
+  background-color: #f7a072;
+  border: none;
+  padding: 0.85rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+  color: #2c3e50;
+}
+.hero-section .btn-secondary:hover {
+  background-color: #d97855;
+  color: #fff;
+}
+.hero-section p.italic-text {
+  margin-top: 1.5rem;
+  font-style: italic;
+  color: #7a4f4f;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+  background: #d1495b;
+  color: #fff;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  user-select: none;
+  margin-top: auto; 
+}

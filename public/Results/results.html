@@ -1,0 +1,84 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz Results | QuizBlaze</title>
+
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+
+  <link rel="stylesheet" href="results.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">QuizBlaze</h1>
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../Game/quiz.html">Play Again</a>
+        <a href="../Profile/profile.html">Profile</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="results-wrapper">
+    <section class="results-card">
+      <h2>🎉 Your Quiz Results</h2>
+
+      <div class="progress-circle" id="progressCircle" aria-label="Quiz score progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <span id="percentageDisplay">0%</span>
+      </div>
+
+      <div class="results-info">
+        <div>
+          <i class="fas fa-user"></i>
+          <p class="label">Player</p>
+          <p id="currentUser" class="value">Guest</p>
+        </div>
+        <div>
+          <i class="fas fa-star"></i>
+          <p class="label">Score</p>
+          <p><span id="score">0</span> / <span id="total">10</span></p>
+        </div>
+        <div>
+          <i class="fas fa-calendar-day"></i>
+          <p class="label">Date</p>
+          <p id="resultDate">Today</p>
+        </div>
+      </div>
+
+      <p id="feedback" class="feedback"></p>
+
+      <div class="btn-group">
+        <button onclick="location.href='../Game/quiz.html'" class="btn btn-primary">
+          <i class="fas fa-redo"></i> Try Again
+        </button>
+        <button onclick="location.href='../Review/review.html'" class="btn btn-secondary">
+          <i class="fas fa-search"></i> Review Answers
+        </button>
+        <button onclick="location.href='../Leaderboard/leaderboard.html'" class="btn btn-tertiary">
+          <i class="fas fa-trophy"></i> Leaderboard
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 QuizBlaze. All rights reserved.
+  </footer>
+
+ 
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="results.js"></script>
+
+</body>
+</html> 
+
